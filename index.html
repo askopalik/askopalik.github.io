@@ -148,6 +148,7 @@ ol.pubs li { padding: 0 0 20px; max-width: 46em; }
 .news li { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 20px; padding: 0 0 14px; }
 .news time { font-family: var(--sans); font-size: .9rem; color: var(--muted); padding-top: 3px; font-variant-numeric: tabular-nums; }
 .news p { margin: 0; }
+.news-img { display: block; width: 100%; height: auto; margin-top: 14px; border-radius: 6px; border: 1px solid var(--rule); }
 @media (max-width: 600px) { .news li { grid-template-columns: 1fr; gap: 2px; } }
 .award { font-family: var(--sans); font-size: .76rem; font-weight: 600; padding: 1px 7px; border-radius: 3px; background: var(--amber-soft); color: var(--amber); }
 .source-note { font-family: var(--sans); font-size: .85rem; color: var(--muted); margin-top: 20px; }
@@ -220,7 +221,10 @@ footer button { font: inherit; color: var(--muted); background: none; border: 1p
       <ol class="news">
         <li>
           <time datetime="2026-10">October 2026</time>
-          <p>Our paper <a href="#publications" data-find="Entropy Potential">An Entropy Potential for Type-Composition Games</a>, with Morteza Alimi, Merlin de la Haye, Pascal Lenzner, Šimon Schierreich and Marcus Wunderlich, received the Best Paper Award at WINE 2026, the 22nd Conference on Web and Internet Economics. The paper will be presented in Hong Kong in December.</p>
+          <div>
+            <p>Our paper <a href="#publications" data-find="Entropy Potential">An Entropy Potential for Type-Composition Games</a>, with Morteza Alimi, Merlin de la Haye, Pascal Lenzner, Šimon Schierreich and Marcus Wunderlich, received the Best Paper Award at WINE 2026, the 22nd Conference on Web and Internet Economics. The paper will be presented in Hong Kong in December.</p>
+            <img class="news-img" src="images/wine2026-best-paper.jpg" width="1600" height="640" loading="lazy" decoding="async" alt="Abstract illustration: groups of blue and gold agents flowing in from both sides and mixing in the middle.">
+          </div>
         </li>
       </ol>
     </div>
